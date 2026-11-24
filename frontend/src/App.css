@@ -1,0 +1,6 @@
+/* App layout shell — no page-specific styles */
+.app-shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}

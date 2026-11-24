@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error-container": "#93000a", "tertiary-fixed": "#c0e8ff", "on-tertiary-container": "#006686", "on-tertiary-fixed-variant": "#004d66", "on-error-container": "#ffdad6", "surface": "#0f131c", "on-primary-container": "#006970", "surface-bright": "#353943", "tertiary-fixed-dim": "#7bd1fa", "surface-container-lowest": "#0a0e17", "error": "#ffb4ab", "primary": "#dbfcff", "primary-container": "#00f0ff", "on-surface-variant": "#b9cacb", "secondary-fixed": "#e0e0ff", "on-secondary-fixed": "#000767", "on-primary-fixed": "#002022", "primary-fixed-dim": "#00dbe9", "secondary": "#bdc2ff", "surface-dim": "#0f131c", "outline-variant": "#3b494b", "tertiary-container": "#a9e1ff", "on-background": "#dfe2ef", "inverse-on-surface": "#2c303a", "background": "#0f131c", "on-tertiary-fixed": "#001e2b", "on-secondary": "#131e8c", "surface-container-high": "#262a34", "on-primary-fixed-variant": "#004f54", "on-tertiary": "#003547", "on-surface": "#dfe2ef", "secondary-fixed-dim": "#bdc2ff", "primary-fixed": "#7df4ff", "inverse-primary": "#006970", "surface-variant": "#31353f", "on-error": "#690005", "on-secondary-fixed-variant": "#2f3aa3", "on-secondary-container": "#a8afff", "surface-tint": "#00dbe9", "inverse-surface": "#dfe2ef", "surface-container-highest": "#31353f", "on-primary": "#00363a", "surface-container-low": "#181b25", "outline": "#849495", "secondary-container": "#2f3aa3", "surface-container": "#1c1f29", "tertiary": "#ecf7ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2rem", "gutter": "1rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-lg": ["Space Grotesk"], "body-sm": ["Inter"], "headline-md": ["Space Grotesk"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Space Grotesk"], "display-hero": ["Space Grotesk"], "label-caps": ["JetBrains Mono"], "telemetry-data": ["JetBrains Mono"], "telemetry-unit": ["JetBrains Mono"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "500" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-caps": ["10px", { "lineHeight": "12px", "letterSpacing": "0.14em", "fontWeight": "600" }], "telemetry-data": ["14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" }], "telemetry-unit": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased select-none"><header class="fixed top-0 left-0 right-0 h-14 bg-surface-container-lowest/80 backdrop-blur-xl z-50 flex items-center justify-between px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-container text-[20px] animate-pulse">token</span><span class="font-headline-sm text-headline-sm text-primary tracking-wider">JARVIS <span class="text-primary-container font-label-caps text-label-caps">// OS v4.2</span></span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span><span class="font-label-caps text-label-caps text-on-surface-variant">ONLINE - KERNEL READY</span></div></div><div class="hidden md:flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00f0ff]"></span><span class="font-label-caps text-label-caps text-primary">GEMINI 1.5 PRO // ACTIVE</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_6px_#bdc2ff]"></span><span class="font-label-caps text-label-caps text-on-surface-variant">OPENROUTER BACKUP // SYNCED</span></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-md text-on-surface-variant font-telemetry-data text-telemetry-data"><div class="flex items-center gap-space-xs"><span class="text-primary-container font-label-caps text-label-caps">CPU</span><span class="text-on-surface">14%</span></div><div class="flex items-center gap-space-xs"><span class="text-primary-container font-label-caps text-label-caps">RAM</span><span class="text-on-surface">4.2/32GB</span></div><div class="flex items-center gap-space-xs"><span class="text-primary-container font-label-caps text-label-caps">NET</span><span class="text-on-surface">18ms</span></div></div><div class="flex items-center gap-space-sm"><button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="flex items-center"><button class="w-9 h-8 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[16px]">remove</span></button><button class="w-9 h-8 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[14px]">crop_square</span></button><button class="w-9 h-8 flex items-center justify-center text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors"><span class="material-symbols-outlined text-[16px]">close</span></button></div></div></header><aside class="fixed left-0 top-14 bottom-8 w-16 bg-surface-container-lowest/70 backdrop-blur-xl z-40 flex flex-col items-center py-space-md justify-between shadow-[1px_0_12px_rgba(0,0,0,0.5)]"><nav class="flex flex-col gap-space-md items-center w-full px-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-[0_0_16px_rgba(0,240,255,0.4)]"><a aria-current="page" class="w-10 h-10 rounded flex items-center justify-center transition-all bg-primary-container text-on-primary-container font-bold shadow-[0_0_16px_rgba(0,240,255,0.4)]" data-path="pc-control" href="#"><span class="material-symbols-outlined text-[20px]">terminal</span></a><a class="w-10 h-10 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="automation" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span></a><a class="w-10 h-10 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="memory-core" href="#"><span class="material-symbols-outlined text-[20px]">neurology</span></a><a class="w-10 h-10 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="vision-array" href="#"><span class="material-symbols-outlined text-[20px]">visibility</span></a><a class="w-10 h-10 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="security-shield" href="#"><span class="material-symbols-outlined text-[20px]">shield</span></a><a class="w-10 h-10 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="activity-stream" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span></a></nav><div class="flex flex-col items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_10px_#00f0ff]"></div><span class="font-label-caps text-label-caps text-on-surface-variant text-[9px]">NODE</span></div></aside><div class="pl-16"><main class="relative pt-14 pb-8 min-h-screen w-full bg-surface-container-lowest bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,240,255,0.08),rgba(15,19,28,0))]"><div class="flex flex-col w-full relative overflow-hidden select-none">
+<!-- Dynamic Atmospheric Glows & Grid Coordinates -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[720px] h-[720px] bg-radial from-primary-container/15 via-secondary/5 to-transparent blur-3xl opacity-75"></div>
+<div class="absolute top-10 left-20 w-96 h-96 bg-primary-container/10 blur-[100px] rounded-full"></div>
+<div class="absolute bottom-20 right-20 w-[480px] h-[480px] bg-secondary/10 blur-[120px] rounded-full"></div>
+<!-- Fine HUD Blueprint Reticle Matrix -->
+<div class="absolute inset-0 bg-[radial-gradient(rgba(0,240,255,0.06)_1px,transparent_1px)] [background-size:32px_32px] opacity-40"></div>
+<div class="absolute inset-x-0 top-1/2 h-px bg-gradient-to-r from-transparent via-primary-container/20 to-transparent"></div>
+<div class="absolute inset-y-0 left-1/2 w-px bg-gradient-to-b from-transparent via-primary-container/20 to-transparent"></div>
+</div>
+<!-- Primary HUD Stage Area -->
+<div class="relative z-10 w-full max-w-[1720px] mx-auto px-space-md lg:px-space-xl py-space-md flex flex-col gap-space-lg">
+<!-- Top Telemetry Ribbon / Quick Diagnostics -->
+<div class="w-full flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/70 backdrop-blur-xl px-space-md py-space-sm rounded-lg shadow-xl shadow-surface-container-lowest/80">
+<div class="flex items-center gap-space-md divide-x divide-outline-variant/30">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_10px_#00f0ff] animate-ping"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">ARC-CORE::SYS_STABLE</span>
+<span class="font-telemetry-unit text-telemetry-unit px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">LAT: 11.4ms</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm pl-space-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant">SEC_ENCLAVE</span>
+<span class="font-telemetry-data text-telemetry-data text-primary-container font-mono">HARDWARE_ISOLATED</span>
+</div>
+<div class="hidden md:flex items-center gap-space-sm pl-space-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant">MEM_BANDWIDTH</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary font-mono">1.24 TB/s</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md font-telemetry-unit text-telemetry-unit">
+<div class="hidden xl:flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary-container">mic</span>
+<span>HyperX QuadCast S (48kHz/24b)</span>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">surround_sound</span>
+<span>Spatial DSP 7.1 Atmos</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps">GEMINI 1.5 PRO // PRIME</span>
+</div>
+</div>
+</div>
+<!-- Center Stage: Arc Reactor Visualizer & Holographic Core -->
+<div class="relative w-full flex flex-col items-center justify-center pt-2 pb-6">
+<!-- Top Ambient Floating Labels -->
+<div class="w-full flex items-center justify-between px-space-lg text-on-surface-variant/70 font-label-caps text-label-caps pointer-events-none">
+<div class="flex flex-col items-start gap-1">
+<span class="text-primary-container tracking-widest">[RESONANCE VECTOR]</span>
+<span class="text-on-surface text-[11px] font-mono">AZIMUTH: 042.88° // EL: +18.2°</span>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="text-secondary tracking-widest">[NEURAL SYNC]</span>
+<span class="text-on-surface text-[11px] font-mono">HARMONICS: 432.09 Hz ACTIVE</span>
+</div>
+</div>
+<!-- Core Holographic Interactive Orb Vessel -->
+<div class="relative w-[340px] h-[340px] sm:w-[420px] sm:h-[420px] lg:w-[480px] lg:h-[480px] flex items-center justify-center my-2">
+<!-- Outer Static Compass HUD Ring -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none text-primary-container/20" fill="none" viewbox="0 0 500 500">
+<circle cx="250" cy="250" r="240" stroke="currentColor" stroke-dasharray="4 8" stroke-width="1"></circle>
+<circle cx="250" cy="250" opacity="0.4" r="230" stroke="currentColor" stroke-width="0.75"></circle>
+<!-- Cardinal Ticks -->
+<line class="text-primary-container" stroke="currentColor" stroke-width="2" x1="250" x2="250" y1="6" y2="24"></line>
+<line class="text-primary-container" stroke="currentColor" stroke-width="2" x1="250" x2="250" y1="476" y2="494"></line>
+<line class="text-primary-container" stroke="currentColor" stroke-width="2" x1="6" x2="24" y1="250" y2="250"></line>
+<line class="text-primary-container" stroke="currentColor" stroke-width="2" x1="476" x2="494" y1="250" y2="250"></line>
+<!-- Degree Text Indicators -->
+<text fill="#00f0ff" font-family="JetBrains Mono" font-size="9" letter-spacing="2" x="254" y="22">000°</text>
+<text fill="#00f0ff" font-family="JetBrains Mono" font-size="9" x="466" y="246">090°</text>
+<text fill="#00f0ff" font-family="JetBrains Mono" font-size="9" x="254" y="490">180°</text>
+<text fill="#00f0ff" font-family="JetBrains Mono" font-size="9" x="10" y="246">270°</text>
+</svg>
+<!-- Dynamic Counter-Rotating Orbital Rings -->
+<div class="absolute inset-4 sm:inset-6 rounded-full border border-primary-container/30 border-dashed animate-[spin_40s_linear_infinite]"></div>
+<div class="absolute inset-10 sm:inset-12 rounded-full border border-secondary/25 border-dotted animate-[spin_26s_linear_infinite_reverse]"></div>
+<!-- Multi-Axis Hologram Rings (Perspective 3D illusion) -->
+<div class="absolute inset-16 sm:inset-20 rounded-full border border-primary-container/40 animate-[spin_18s_ease-in-out_infinite]" style="transform-style: preserve-3d; transform: rotateX(65deg) rotateY(25deg);"></div>
+<div class="absolute inset-16 sm:inset-20 rounded-full border border-secondary/40 animate-[spin_22s_ease-in-out_infinite_reverse]" style="transform-style: preserve-3d; transform: rotateX(-50deg) rotateY(40deg);"></div>
+<div class="absolute inset-24 rounded-full border border-primary/20 animate-[spin_12s_linear_infinite]" style="transform-style: preserve-3d; transform: rotateX(20deg) rotateY(-60deg);"></div>
+<!-- Audio Reactive Waveform Circle -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative w-64 h-64 sm:w-80 sm:h-80 flex items-center justify-center">
+<!-- Simulated Radial Equalizer Spikes -->
+<div class="absolute inset-0 flex items-center justify-center rotate-0"><span class="h-10 w-0.5 bg-primary-container shadow-[0_0_8px_#00f0ff] -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-12"><span class="h-7 w-0.5 bg-secondary -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-24"><span class="h-12 w-0.5 bg-primary-container shadow-[0_0_8px_#00f0ff] -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-36"><span class="h-6 w-0.5 bg-secondary/80 -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-48"><span class="h-14 w-0.5 bg-primary-container shadow-[0_0_8px_#00f0ff] -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-60"><span class="h-9 w-0.5 bg-secondary -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-72"><span class="h-11 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-90"><span class="h-8 w-0.5 bg-secondary shadow-[0_0_8px_#bdc2ff] -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-105"><span class="h-12 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-120"><span class="h-5 w-0.5 bg-secondary/60 -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-140"><span class="h-13 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-160"><span class="h-8 w-0.5 bg-secondary -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-180"><span class="h-10 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-200"><span class="h-6 w-0.5 bg-secondary -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-220"><span class="h-12 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-240"><span class="h-9 w-0.5 bg-secondary -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-260"><span class="h-11 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-280"><span class="h-7 w-0.5 bg-secondary -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-300"><span class="h-13 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-320"><span class="h-8 w-0.5 bg-secondary -translate-y-36 animate-pulse"></span></div>
+<div class="absolute inset-0 flex items-center justify-center rotate-340"><span class="h-10 w-0.5 bg-primary-container -translate-y-36 animate-pulse"></span></div>
+</div>
+</div>
+<!-- The Arc Energy Core -->
+<div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-gradient-to-tr from-surface-container-lowest via-surface-container-high to-surface-container flex items-center justify-center shadow-[0_0_60px_rgba(0,240,255,0.45)] group cursor-pointer transition-transform duration-500 hover:scale-105">
+<!-- Multi-tier Internal Glow Spheres -->
+<div class="absolute inset-2 rounded-full bg-gradient-to-br from-primary-container/20 to-secondary/30 backdrop-blur-md animate-pulse"></div>
+<div class="absolute inset-5 rounded-full bg-surface-container-lowest/80 flex items-center justify-center">
+<!-- Center Arc Reactor Symbol -->
+<div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-radial from-primary via-primary-container/40 to-transparent flex items-center justify-center shadow-[inset_0_0_24px_#00f0ff]">
+<span class="material-symbols-outlined text-[36px] sm:text-[42px] text-primary drop-shadow-[0_0_12px_#00f0ff] animate-pulse">psychology</span>
+<!-- Orbiting Micro Particle -->
+<div class="absolute -top-1 left-1/2 w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#ffffff] -translate-x-1/2 animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite]"></div>
+</div>
+</div>
+<!-- Hexagonal HUD Brackets -->
+<div class="absolute -top-3 px-2 py-0.5 rounded bg-surface-container-highest text-primary-container font-label-caps text-[9px] tracking-widest border-t border-primary-container/60">REACTOR::ACTIVE</div>
+<div class="absolute -bottom-3 px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-caps text-[9px] tracking-widest border-b border-secondary/60">OUTPUT: 99.8%</div>
+</div>
+</div>
+<!-- Assistant State Ribbon Selector -->
+<div class="mt-4 flex flex-wrap items-center justify-center gap-space-xs sm:gap-space-sm p-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-2xl shadow-xl shadow-surface-container-lowest">
+<button class="assistant-state-btn px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all font-label-caps text-label-caps flex items-center gap-1.5" id="state-standby" onclick="switchState('standby')">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+<span>STANDBY</span>
+</button>
+<button class="assistant-state-btn px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all font-label-caps text-label-caps flex items-center gap-1.5" id="state-listening" onclick="switchState('listening')">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>LISTENING</span>
+</button>
+<button class="assistant-state-btn px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-secondary transition-all font-label-caps text-label-caps flex items-center gap-1.5" id="state-thinking" onclick="switchState('thinking')">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>THINKING</span>
+</button>
+<!-- Active Default State: Speaking -->
+<button class="assistant-state-btn px-space-md py-1.5 rounded-full bg-primary-container/20 text-primary-container shadow-[0_0_16px_rgba(0,240,255,0.35)] transition-all font-label-caps text-label-caps flex items-center gap-2" id="state-speaking" onclick="switchState('speaking')">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00f0ff] animate-ping"></span>
+<span>SPEAKING</span>
+<!-- Audio waveform bars -->
+<div class="flex items-center gap-0.5 h-3 ml-1">
+<span class="w-0.5 h-2 bg-primary-container animate-pulse"></span>
+<span class="w-0.5 h-3 bg-primary-container animate-pulse" style="animation-delay: 150ms;"></span>
+<span class="w-0.5 h-1.5 bg-primary-container animate-pulse" style="animation-delay: 300ms;"></span>
+<span class="w-0.5 h-2.5 bg-primary-container animate-pulse" style="animation-delay: 75ms;"></span>
+</div>
+</button>
+<button class="assistant-state-btn px-space-md py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all font-label-caps text-label-caps flex items-center gap-1.5" id="state-executing" onclick="switchState('executing')">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>EXECUTING</span>
+</button>
+</div>
+</div>
+<!-- Main Dynamic Lower Cockpit: Bento Split View -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Rail Diagnostic Panel: PC Control Matrix (Cols 1-4) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Live System Control Matrix Widget -->
+<div class="w-full bg-surface-container-low/75 backdrop-blur-xl rounded-xl p-space-md flex flex-col gap-space-md shadow-2xl shadow-surface-container-lowest">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-wide">SYSTEM MATRIX</span>
+</div>
+<div class="flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container font-label-caps text-[10px] text-primary-container">
+<span>NODE: DESKTOP-X1</span>
+</div>
+</div>
+<!-- Performance Gauges Dual Column -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- GPU Node Card -->
+<div class="bg-surface-container/60 rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex justify-between items-center text-on-surface-variant font-label-caps text-[10px]">
+<span>NVIDIA RTX 4090</span>
+<span class="text-primary-container font-mono">41°C</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary font-mono tracking-tight mt-1">
+                2,520 <span class="text-[13px] text-on-surface-variant">MHz</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-gradient-to-r from-primary-container to-secondary h-full w-[68%]"></div>
+</div>
+<span class="font-telemetry-unit text-[10px] text-on-surface-variant mt-0.5">VRAM: 14.8 / 24 GB Allocated</span>
+</div>
+<!-- CPU Cluster Card -->
+<div class="bg-surface-container/60 rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex justify-between items-center text-on-surface-variant font-label-caps text-[10px]">
+<span>AMD RYZEN 9</span>
+<span class="text-primary-container font-mono">38°C</span>
+</div>
+<div class="font-headline-md text-headline-md text-primary font-mono tracking-tight mt-1">
+                5.40 <span class="text-[13px] text-on-surface-variant">GHz</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1">
+<div class="bg-gradient-to-r from-primary-container to-secondary h-full w-[42%]"></div>
+</div>
+<span class="font-telemetry-unit text-[10px] text-on-surface-variant mt-0.5">32 Cores // 64 Threads Nominal</span>
+</div>
+</div>
+<!-- Quick Automation Scripts / Action Pills -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-caps text-[10px] text-on-surface-variant tracking-wider">ACTIVE BACKGROUND PROTOCOLS</span>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container/40 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-container">memory</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Neural Frame Synthesizer</span>
+<span class="font-telemetry-unit text-[10px] text-on-surface-variant">Pipeline 0 // Stable Diffusion XL Tensor</span>
+</div>
+</div>
+<span class="font-label-caps text-[10px] text-primary-container px-2 py-0.5 rounded bg-primary-container/10">HOT</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container/40 hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Zero-Trust Sandbox Guard</span>
+<span class="font-telemetry-unit text-[10px] text-on-surface-variant">14 Background Daemons Sandboxed</span>
+</div>
+</div>
+<span class="font-label-caps text-[10px] text-secondary px-2 py-0.5 rounded bg-secondary/10">SHIELD</span>
+</div>
+</div>
+</div>
+<!-- Vector Memory Stream Indicator -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container/30">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[18px]">neurology</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-primary">VECTOR RECALL CORE</span>
+<span class="font-telemetry-unit text-telemetry-unit text-on-surface-variant">42,891 Embedding Nodes Synced</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-primary font-label-caps text-[10px] transition-colors">QUERY</button>
+</div>
+</div>
+</div>
+<!-- Right/Center Main Conversation & Interactive Execution Terminal (Cols 5-12) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Floating Conversation Log Glass Panel -->
+<div class="w-full bg-surface-container-low/75 backdrop-blur-2xl rounded-2xl p-space-md lg:p-space-lg flex flex-col gap-space-md shadow-2xl shadow-surface-container-lowest">
+<!-- Terminal Panel Header -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_10px_#00f0ff]"></div>
+<span class="font-headline-sm text-headline-sm text-primary tracking-wide">NEURAL STREAM</span>
+<span class="font-label-caps text-[11px] text-on-surface-variant font-mono">// SESSION_ID: #4092-ALPHA</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Export Stream">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Clear Buffer">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+</button>
+</div>
+</div>
+<!-- Dialog Exchange Stream -->
+<div class="flex flex-col gap-space-md overflow-y-auto max-h-[340px] pr-2">
+<!-- User Prompt Message Box -->
+<div class="flex flex-col items-end gap-1">
+<div class="flex items-center gap-space-xs font-label-caps text-[10px] text-on-surface-variant">
+<span>USER_COMMAND</span>
+<span>•</span>
+<span class="font-mono">14:32:04</span>
+</div>
+<div class="max-w-[85%] rounded-xl rounded-tr-none bg-surface-container p-space-md shadow-md text-on-surface font-body-md text-body-md">
+                Jarvis, optimize GPU cluster for local neural rendering and summarize thermal telemetry.
+              </div>
+</div>
+<!-- JARVIS Response Message Box -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-space-xs font-label-caps text-[10px] text-primary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="tracking-wider">JARVIS_SYNTHESIS</span>
+<span>•</span>
+<span class="font-mono text-on-surface-variant">14:32:05</span>
+</div>
+<div class="max-w-[92%] rounded-xl rounded-tl-none bg-surface-container-high/90 p-space-md shadow-lg flex flex-col gap-space-sm text-on-surface">
+<p class="font-body-md text-body-md leading-relaxed text-tertiary">
+                  Local RTX cluster reallocated. Thermal dissipation stable at <span class="text-primary-container font-mono font-medium">41°C</span>. 14 background daemons throttled; neural frame synthesis ready on display pipeline 0.
+                </p>
+<!-- Embedded Micro Action Telemetry Card -->
+<div class="p-space-sm rounded bg-surface-container-lowest/80 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[18px]">bolt</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary">POWER TARGET: 320W OPTIMIZED</span>
+<span class="font-telemetry-unit text-[10px] text-on-surface-variant">Tensor Core Boost Active • NVLink Interconnect Synced</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/10 text-primary-container font-mono text-[11px] font-semibold">PASS</span>
+</div>
+</div>
+<!-- Speech Output Audio Waveform & Control Ribbon -->
+<div class="flex items-center justify-between pt-1 gap-space-sm">
+<div class="flex items-center gap-space-sm flex-1">
+<span class="material-symbols-outlined text-primary-container text-[18px] animate-pulse">graphic_eq</span>
+<!-- Dynamic Soundwave Array -->
+<div class="flex items-center gap-1 h-5 flex-1 max-w-xs">
+<span class="w-1 h-3 bg-primary-container rounded-none animate-pulse"></span>
+<span class="w-1 h-5 bg-primary rounded-none animate-pulse" style="animation-delay: 100ms;"></span>
+<span class="w-1 h-2 bg-secondary rounded-none animate-pulse" style="animation-delay: 250ms;"></span>
+<span class="w-1 h-4 bg-primary-container rounded-none animate-pulse" style="animation-delay: 75ms;"></span>
+<span class="w-1 h-5 bg-primary rounded-none animate-pulse" style="animation-delay: 180ms;"></span>
+<span class="w-1 h-3 bg-secondary rounded-none animate-pulse" style="animation-delay: 300ms;"></span>
+<span class="w-1 h-2 bg-primary-container rounded-none animate-pulse" style="animation-delay: 120ms;"></span>
+<span class="w-1 h-4 bg-primary rounded-none animate-pulse" style="animation-delay: 220ms;"></span>
+<span class="w-1 h-3 bg-secondary rounded-none animate-pulse" style="animation-delay: 90ms;"></span>
+<span class="w-1 h-5 bg-primary-container rounded-none animate-pulse" style="animation-delay: 160ms;"></span>
+<span class="w-1 h-2 bg-primary rounded-none animate-pulse" style="animation-delay: 40ms;"></span>
+</div>
+<span class="font-telemetry-unit text-telemetry-unit text-on-surface-variant font-mono">00:03 / 00:07</span>
+</div>
+<!-- Stop Speaking Hotkey Trigger -->
+<button class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-error-container/30 hover:bg-error-container/60 text-on-error-container transition-all group font-label-caps text-[10px]">
+<span class="w-2.5 h-2.5 rounded-sm bg-error group-hover:scale-110 transition-transform"></span>
+<span>STOP</span>
+<kbd class="px-1 rounded bg-surface-container-lowest font-mono text-[9px] text-on-surface-variant">ESC</kbd>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Prompt Input Capsule & Multimodal Triggers -->
+<div class="mt-space-xs pt-space-sm flex flex-col gap-2">
+<div class="relative flex items-center bg-surface-container-lowest/90 rounded-xl p-1.5 shadow-inner focus-within:shadow-[0_0_20px_rgba(0,240,255,0.25)] transition-all">
+<!-- Microphone Continuous Listening Button -->
+<button class="w-10 h-10 rounded-lg bg-primary-container/15 hover:bg-primary-container/25 text-primary-container flex items-center justify-center transition-all group relative" id="mic-trigger">
+<span class="material-symbols-outlined text-[20px] group-hover:scale-110 transition-transform">mic</span>
+<span class="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+</button>
+<!-- Text Input Area -->
+<input class="flex-1 bg-transparent px-space-md text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md focus:outline-none" id="jarvis-prompt" placeholder="Ask JARVIS anything or trigger routine [Ctrl + Space]..." type="text"/>
+<!-- Auxiliary Multimodal Tools -->
+<div class="flex items-center gap-1 px-1">
+<button class="w-9 h-9 rounded flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Attach Vision Stream">
+<span class="material-symbols-outlined text-[19px]">add_photo_alternate</span>
+</button>
+<button class="w-9 h-9 rounded flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-colors" title="Continuous Audio Stream">
+<span class="material-symbols-outlined text-[19px]">graphic_eq</span>
+</button>
+<!-- Send Action Button -->
+<button class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center hover:opacity-90 transition-opacity shadow-[0_0_12px_rgba(0,240,255,0.4)]" id="send-btn">
+<span class="material-symbols-outlined text-[20px] font-bold">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Hotkey & Context Stamp Hint Line -->
+<div class="flex items-center justify-between px-space-xs font-telemetry-unit text-telemetry-unit text-on-surface-variant/70">
+<div class="flex items-center gap-space-md">
+<span>[Enter] Transmit query</span>
+<span>[Ctrl+Space] Voice toggle</span>
+<span>[Esc] Interupt DSP voice</span>
+</div>
+<div class="flex items-center gap-1 text-primary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>MODAL: MULTI-THREADED AGENT</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Floating System Bar (Complementary Status Matrix) -->
+<div class="w-full grid grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low/60 backdrop-blur-md p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[22px]">hub</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-[10px] text-on-surface-variant truncate">NEURAL ENGINE</span>
+<span class="font-telemetry-data text-telemetry-data text-primary truncate">Gemini 1.5 Pro Low-Latency</span>
+</div>
+</div>
+<div class="bg-surface-container-low/60 backdrop-blur-md p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">swap_calls</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-[10px] text-on-surface-variant truncate">HOT BACKUP</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary truncate">OpenRouter Llama 3 70B</span>
+</div>
+</div>
+<div class="bg-surface-container-low/60 backdrop-blur-md p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[22px]">graphic_eq</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-[10px] text-on-surface-variant truncate">SPEECH SYNTHESIS</span>
+<span class="font-telemetry-data text-telemetry-data text-primary truncate">Spatial Neural Voice HD</span>
+</div>
+</div>
+<div class="bg-surface-container-low/60 backdrop-blur-md p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[22px]">security</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-[10px] text-on-surface-variant truncate">HARDWARE SANDBOX</span>
+<span class="font-telemetry-data text-telemetry-data text-tertiary-fixed-dim truncate">Safe Mode Active // L3</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Handling for States and Prompts -->
+<script>
+    function switchState(stateName) {
+      const states = ['standby', 'listening', 'thinking', 'speaking', 'executing'];
+      states.forEach(s => {
+        const btn = document.getElementById('state-' + s);
+        if (btn) {
+          btn.classList.remove('bg-primary-container/20', 'text-primary-container', 'shadow-[0_0_16px_rgba(0,240,255,0.35)]');
+          btn.classList.add('text-on-surface-variant');
+        }
+      });
+
+      const activeBtn = document.getElementById('state-' + stateName);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-on-surface-variant');
+        activeBtn.classList.add('bg-primary-container/20', 'text-primary-container', 'shadow-[0_0_16px_rgba(0,240,255,0.35)]');
+      }
+    }
+
+    // Input interaction simulation
+    const promptInput = document.getElementById('jarvis-prompt');
+    const sendBtn = document.getElementById('send-btn');
+    if (sendBtn && promptInput) {
+      sendBtn.addEventListener('click', () => {
+        if (promptInput.value.trim().length > 0) {
+          switchState('thinking');
+          setTimeout(() => {
+            switchState('speaking');
+            promptInput.value = '';
+          }, 1200);
+        }
+      });
+      promptInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          sendBtn.click();
+        }
+      });
+    }
+  </script>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-8 bg-surface-container-lowest/90 backdrop-blur-xl z-50 flex items-center justify-between px-space-md shadow-[0_-1px_6px_rgba(0,0,0,0.4)]"><div class="flex items-center gap-space-lg font-telemetry-unit text-telemetry-unit text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-container text-[14px]">mic</span><span>IN: 48kHz FLAC</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[14px]">graphic_eq</span><span>OUT: Spatial DSP Online</span></div></div><div class="flex items-center gap-space-lg font-telemetry-unit text-telemetry-unit text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span>LATENCY: 12ms</span></div><div class="flex items-center gap-space-xs px-space-sm rounded bg-surface-container-high text-primary"><span class="material-symbols-outlined text-[13px] text-primary-container">lock</span><span>PROTOCOL: SAFE MODE ACTIVE</span></div></div></footer></body></html>
